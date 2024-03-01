@@ -1,0 +1,38 @@
+|decodificador
+bcdA => Mux0.IN16
+bcdA => Mux1.IN16
+bcdA => Mux2.IN16
+bcdA => Mux3.IN16
+bcdA => Mux4.IN16
+bcdA => Mux5.IN16
+bcdA => Mux6.IN16
+bcdB => Mux0.IN17
+bcdB => Mux1.IN17
+bcdB => Mux2.IN17
+bcdB => Mux3.IN17
+bcdB => Mux4.IN17
+bcdB => Mux5.IN17
+bcdB => Mux6.IN17
+bcdC => Mux0.IN18
+bcdC => Mux1.IN18
+bcdC => Mux2.IN18
+bcdC => Mux3.IN18
+bcdC => Mux4.IN18
+bcdC => Mux5.IN18
+bcdC => Mux6.IN18
+bcdD => Mux0.IN19
+bcdD => Mux1.IN19
+bcdD => Mux2.IN19
+bcdD => Mux3.IN19
+bcdD => Mux4.IN19
+bcdD => Mux5.IN19
+bcdD => Mux6.IN19
+SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\DELL\Documents\VHDL\adders\fulladder4bits\simulation\qsim
+vfulladder4Bits
+Z1 I^YBeEYT^oFB04Lo2Yk[bm2
+Z2 V;dEmB9kDe]dDcj0Uo?mo40
+Z3 dC:\Users\DELL\Documents\VHDL\adders\fulladder4bits\simulation\qsim
+Z4 w1709321490
+Z5 8fulladder4Bits.vo
+Z6 Ffulladder4Bits.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 nfulladder4@bits
+!i10b 1
+Z10 !s100 2kclZgacUPQJ]_LN6]a8V1
+!s85 0
+Z11 !s108 1709321491.716000
+Z12 !s107 fulladder4Bits.vo|
+Z13 !s90 -work|work|fulladder4Bits.vo|
+!s101 -O0
+vfulladder4Bits_vlg_check_tst
+!i10b 1
+!s100 MGT=oW;R;>AKQSfb3kDhg2
+In>B>20;kCDS4NccCn:Wdb1
+Vc8aAC1GQRj3gJEaKEbhiS2
+R3
+Z14 w1709321489
+Z15 8Waveform.vwf.vt
+Z16 FWaveform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1709321491.811000
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+nfulladder4@bits_vlg_check_tst
+vfulladder4Bits_vlg_sample_tst
+!i10b 1
+!s100 `:^=7Z`7O]RJTS2Okc83G0
+I`7LcgU9TEj^mXoCUa2:O;3
+V>>=eO^MFSO2;^^ELk0DAL0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+nfulladder4@bits_vlg_sample_tst
+vfulladder4Bits_vlg_vec_tst
+!i10b 1
+!s100 C]<;f9M]zdQbjSdbhg5<c2
+INN8O;O4OjBBHASgalgb4`3
+VzQdI]EO@l?K;UNBI8fk_91
+R3
+R14
+R15
+R16
+L0 234
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+nfulladder4@bits_vlg_vec_tst

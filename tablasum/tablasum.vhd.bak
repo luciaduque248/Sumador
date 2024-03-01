@@ -1,0 +1,83 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity tablasum is
+	Port (  	SUM : in STD_LOGIC_VECTOR (4 downto 0);
+				D : out STD_LOGIC_VECTOR (3 downto 0)
+				U : out STD_LOGIC_VECTOR (3 downto 0)
+			);
+end tablasum;
+
+architecture Behavioral of tablasum is
+	 
+begin 
+  
+  with SUM select
+	D  <= 	"0000" when "00000",
+				"0000" when "00001",
+				"0000" when "00010",
+				"0000" when "00011",
+				"0000" when "00100",
+				"0000" when "00101",
+				"0000" when "00110",
+				"0000" when "00111",
+				"0000" when "01000",
+				"0000" when "01001",
+				"0001" when "01010",
+				"0001" when "01011",
+				"0001" when "01100",
+				"0001" when "01101",
+				"0001" when "01110",
+				"0001" when "01111",
+				"0001" when "10000",
+				"0001" when "10001",
+				"0001" when "10010",
+				"0001" when "10011",
+				"0010" when "10100",
+				"0010" when "10101",
+				"0010" when "10110",
+				"0010" when "10111",
+				"0010" when "11000",
+				"0010" when "11001",
+				"0010" when "11010",
+				"0010" when "11011",
+				"0010" when "11100",
+				"0010" when "11101",
+				"0011" when "11110",
+				"0011" when "11111",
+				
+				
+	U  <= 	"0000" when "00000",
+				"0000" when "00001",
+				"0000" when "00010",
+				"0000" when "00011",
+				"0000" when "00100",
+				"0000" when "00101",
+				"0000" when "00110",
+				"0000" when "00111",
+				"0000" when "01000",
+				"0000" when "01001",
+				"0001" when "01010",
+				"0001" when "01011",
+				"0001" when "01100",
+				"0001" when "01101",
+				"0001" when "01110",
+				"0001" when "01111",
+				"0001" when "10000",
+				"0001" when "10001",
+				"0001" when "10010",
+				"0001" when "10011",
+				"0010" when "10100",
+				"0010" when "10101",
+				"0010" when "10110",
+				"0010" when "10111",
+				"0010" when "11000",
+				"0010" when "11001",
+				"0010" when "11010",
+				"0010" when "11011",
+				"0010" when "11100",
+				"0010" when "11101",
+				"0011" when "11110",
+				"0011" when "11111",
+
+end Behavioral;

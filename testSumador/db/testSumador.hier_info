@@ -1,0 +1,400 @@
+|testSumador
+A[0] => fulladder4Bits:A4.A[0]
+A[1] => fulladder4Bits:A4.A[1]
+A[2] => fulladder4Bits:A4.A[2]
+A[3] => fulladder4Bits:A4.A[3]
+B[0] => fulladder4Bits:A4.B[0]
+B[1] => fulladder4Bits:A4.B[1]
+B[2] => fulladder4Bits:A4.B[2]
+B[3] => fulladder4Bits:A4.B[3]
+Cin => ~NO_FANOUT~
+UN[0] << decodificador:BCDU.SEG[0]
+UN[1] << decodificador:BCDU.SEG[1]
+UN[2] << decodificador:BCDU.SEG[2]
+UN[3] << decodificador:BCDU.SEG[3]
+UN[4] << decodificador:BCDU.SEG[4]
+UN[5] << decodificador:BCDU.SEG[5]
+UN[6] << decodificador:BCDU.SEG[6]
+DC[0] << decodificador:BCDD.SEG[0]
+DC[1] << decodificador:BCDD.SEG[1]
+DC[2] << decodificador:BCDD.SEG[2]
+DC[3] << decodificador:BCDD.SEG[3]
+DC[4] << decodificador:BCDD.SEG[4]
+DC[5] << decodificador:BCDD.SEG[5]
+DC[6] << decodificador:BCDD.SEG[6]
+
+
+|testSumador|fulladder4Bits:A4
+A[0] => fulladder:A0.A
+A[1] => fulladder:A1.A
+A[2] => fulladder:A2.A
+A[3] => fulladder:A3.A
+B[0] => fulladder:A0.B
+B[1] => fulladder:A1.B
+B[2] => fulladder:A2.B
+B[3] => fulladder:A3.B
+Sum[0] <= fulladder:A0.Sum
+Sum[1] <= fulladder:A1.Sum
+Sum[2] <= fulladder:A2.Sum
+Sum[3] <= fulladder:A3.Sum
+Cout <= fulladder:A3.Cout
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A0
+A => halfadder:HA1.A
+B => halfadder:HA1.B
+cin => halfadder:HA2.B
+sum <= halfadder:HA2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A0|halfadder:HA1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A0|halfadder:HA2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A1
+A => halfadder:HA1.A
+B => halfadder:HA1.B
+cin => halfadder:HA2.B
+sum <= halfadder:HA2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A1|halfadder:HA1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A1|halfadder:HA2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A2
+A => halfadder:HA1.A
+B => halfadder:HA1.B
+cin => halfadder:HA2.B
+sum <= halfadder:HA2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A2|halfadder:HA1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A2|halfadder:HA2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A3
+A => halfadder:HA1.A
+B => halfadder:HA1.B
+cin => halfadder:HA2.B
+sum <= halfadder:HA2.sum
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A3|halfadder:HA1
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|fulladder4Bits:A4|fulladder:A3|halfadder:HA2
+A => Sum.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|tablasum:A5
+SUM[0] => Equal0.IN4
+SUM[0] => Equal1.IN4
+SUM[0] => Equal2.IN3
+SUM[0] => Equal3.IN4
+SUM[0] => Equal4.IN3
+SUM[0] => Equal5.IN4
+SUM[0] => Equal6.IN2
+SUM[0] => Equal7.IN4
+SUM[0] => Equal8.IN3
+SUM[0] => Equal9.IN4
+SUM[0] => Equal10.IN2
+SUM[0] => Equal11.IN4
+SUM[0] => Equal12.IN2
+SUM[0] => Equal13.IN4
+SUM[0] => Equal14.IN1
+SUM[0] => Equal15.IN4
+SUM[0] => Equal16.IN3
+SUM[0] => Equal17.IN4
+SUM[0] => Equal18.IN2
+SUM[0] => Equal19.IN4
+SUM[0] => Equal20.IN2
+SUM[0] => Equal21.IN4
+SUM[0] => Equal22.IN1
+SUM[0] => Equal23.IN4
+SUM[0] => Equal24.IN2
+SUM[0] => Equal25.IN4
+SUM[0] => Equal26.IN1
+SUM[0] => Equal27.IN4
+SUM[0] => Equal28.IN1
+SUM[0] => Equal29.IN4
+SUM[0] => Equal30.IN0
+SUM[0] => Equal31.IN4
+SUM[1] => Mux1.IN19
+SUM[1] => Equal0.IN3
+SUM[1] => Equal1.IN3
+SUM[1] => Equal2.IN4
+SUM[1] => Equal3.IN3
+SUM[1] => Equal4.IN2
+SUM[1] => Equal5.IN2
+SUM[1] => Equal6.IN4
+SUM[1] => Equal7.IN3
+SUM[1] => Equal8.IN2
+SUM[1] => Equal9.IN2
+SUM[1] => Equal10.IN4
+SUM[1] => Equal11.IN3
+SUM[1] => Equal12.IN1
+SUM[1] => Equal13.IN1
+SUM[1] => Equal14.IN4
+SUM[1] => Equal15.IN3
+SUM[1] => Equal16.IN2
+SUM[1] => Equal17.IN2
+SUM[1] => Equal18.IN4
+SUM[1] => Equal19.IN3
+SUM[1] => Equal20.IN1
+SUM[1] => Equal21.IN1
+SUM[1] => Equal22.IN4
+SUM[1] => Equal23.IN3
+SUM[1] => Equal24.IN1
+SUM[1] => Equal25.IN1
+SUM[1] => Equal26.IN4
+SUM[1] => Equal27.IN3
+SUM[1] => Equal28.IN0
+SUM[1] => Equal29.IN0
+SUM[1] => Equal30.IN4
+SUM[1] => Equal31.IN3
+SUM[2] => Mux0.IN10
+SUM[2] => Mux1.IN18
+SUM[2] => Equal0.IN2
+SUM[2] => Equal1.IN2
+SUM[2] => Equal2.IN2
+SUM[2] => Equal3.IN2
+SUM[2] => Equal4.IN4
+SUM[2] => Equal5.IN3
+SUM[2] => Equal6.IN3
+SUM[2] => Equal7.IN2
+SUM[2] => Equal8.IN1
+SUM[2] => Equal9.IN1
+SUM[2] => Equal10.IN1
+SUM[2] => Equal11.IN1
+SUM[2] => Equal12.IN4
+SUM[2] => Equal13.IN3
+SUM[2] => Equal14.IN3
+SUM[2] => Equal15.IN2
+SUM[2] => Equal16.IN1
+SUM[2] => Equal17.IN1
+SUM[2] => Equal18.IN1
+SUM[2] => Equal19.IN1
+SUM[2] => Equal20.IN4
+SUM[2] => Equal21.IN3
+SUM[2] => Equal22.IN3
+SUM[2] => Equal23.IN2
+SUM[2] => Equal24.IN0
+SUM[2] => Equal25.IN0
+SUM[2] => Equal26.IN0
+SUM[2] => Equal27.IN0
+SUM[2] => Equal28.IN4
+SUM[2] => Equal29.IN3
+SUM[2] => Equal30.IN3
+SUM[2] => Equal31.IN2
+SUM[3] => Mux0.IN9
+SUM[3] => Mux1.IN17
+SUM[3] => Equal0.IN1
+SUM[3] => Equal1.IN1
+SUM[3] => Equal2.IN1
+SUM[3] => Equal3.IN1
+SUM[3] => Equal4.IN1
+SUM[3] => Equal5.IN1
+SUM[3] => Equal6.IN1
+SUM[3] => Equal7.IN1
+SUM[3] => Equal8.IN4
+SUM[3] => Equal9.IN3
+SUM[3] => Equal10.IN3
+SUM[3] => Equal11.IN2
+SUM[3] => Equal12.IN3
+SUM[3] => Equal13.IN2
+SUM[3] => Equal14.IN2
+SUM[3] => Equal15.IN1
+SUM[3] => Equal16.IN0
+SUM[3] => Equal17.IN0
+SUM[3] => Equal18.IN0
+SUM[3] => Equal19.IN0
+SUM[3] => Equal20.IN0
+SUM[3] => Equal21.IN0
+SUM[3] => Equal22.IN0
+SUM[3] => Equal23.IN0
+SUM[3] => Equal24.IN4
+SUM[3] => Equal25.IN3
+SUM[3] => Equal26.IN3
+SUM[3] => Equal27.IN2
+SUM[3] => Equal28.IN3
+SUM[3] => Equal29.IN2
+SUM[3] => Equal30.IN2
+SUM[3] => Equal31.IN1
+SUM[4] => Mux0.IN8
+SUM[4] => Mux1.IN16
+SUM[4] => Equal0.IN0
+SUM[4] => Equal1.IN0
+SUM[4] => Equal2.IN0
+SUM[4] => Equal3.IN0
+SUM[4] => Equal4.IN0
+SUM[4] => Equal5.IN0
+SUM[4] => Equal6.IN0
+SUM[4] => Equal7.IN0
+SUM[4] => Equal8.IN0
+SUM[4] => Equal9.IN0
+SUM[4] => Equal10.IN0
+SUM[4] => Equal11.IN0
+SUM[4] => Equal12.IN0
+SUM[4] => Equal13.IN0
+SUM[4] => Equal14.IN0
+SUM[4] => Equal15.IN0
+SUM[4] => Equal16.IN4
+SUM[4] => Equal17.IN3
+SUM[4] => Equal18.IN3
+SUM[4] => Equal19.IN2
+SUM[4] => Equal20.IN3
+SUM[4] => Equal21.IN2
+SUM[4] => Equal22.IN2
+SUM[4] => Equal23.IN1
+SUM[4] => Equal24.IN3
+SUM[4] => Equal25.IN2
+SUM[4] => Equal26.IN2
+SUM[4] => Equal27.IN1
+SUM[4] => Equal28.IN2
+SUM[4] => Equal29.IN1
+SUM[4] => Equal30.IN1
+SUM[4] => Equal31.IN0
+D[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= <GND>
+D[3] <= <GND>
+U[0] <= U[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+U[1] <= U[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+U[2] <= <GND>
+U[3] <= <GND>
+
+
+|testSumador|decodificador:BCDD
+BCD[0] => Mux0.IN19
+BCD[0] => Mux1.IN19
+BCD[0] => Mux2.IN19
+BCD[0] => Mux3.IN19
+BCD[0] => Mux4.IN19
+BCD[0] => Mux5.IN19
+BCD[0] => Mux6.IN19
+BCD[1] => Mux0.IN18
+BCD[1] => Mux1.IN18
+BCD[1] => Mux2.IN18
+BCD[1] => Mux3.IN18
+BCD[1] => Mux4.IN18
+BCD[1] => Mux5.IN18
+BCD[1] => Mux6.IN18
+BCD[2] => Mux0.IN17
+BCD[2] => Mux1.IN17
+BCD[2] => Mux2.IN17
+BCD[2] => Mux3.IN17
+BCD[2] => Mux4.IN17
+BCD[2] => Mux5.IN17
+BCD[2] => Mux6.IN17
+BCD[3] => Mux0.IN16
+BCD[3] => Mux1.IN16
+BCD[3] => Mux2.IN16
+BCD[3] => Mux3.IN16
+BCD[3] => Mux4.IN16
+BCD[3] => Mux5.IN16
+BCD[3] => Mux6.IN16
+SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testSumador|decodificador:BCDU
+BCD[0] => Mux0.IN19
+BCD[0] => Mux1.IN19
+BCD[0] => Mux2.IN19
+BCD[0] => Mux3.IN19
+BCD[0] => Mux4.IN19
+BCD[0] => Mux5.IN19
+BCD[0] => Mux6.IN19
+BCD[1] => Mux0.IN18
+BCD[1] => Mux1.IN18
+BCD[1] => Mux2.IN18
+BCD[1] => Mux3.IN18
+BCD[1] => Mux4.IN18
+BCD[1] => Mux5.IN18
+BCD[1] => Mux6.IN18
+BCD[2] => Mux0.IN17
+BCD[2] => Mux1.IN17
+BCD[2] => Mux2.IN17
+BCD[2] => Mux3.IN17
+BCD[2] => Mux4.IN17
+BCD[2] => Mux5.IN17
+BCD[2] => Mux6.IN17
+BCD[3] => Mux0.IN16
+BCD[3] => Mux1.IN16
+BCD[3] => Mux2.IN16
+BCD[3] => Mux3.IN16
+BCD[3] => Mux4.IN16
+BCD[3] => Mux5.IN16
+BCD[3] => Mux6.IN16
+SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
