@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "03/05/2024 16:33:44"
+-- DATE "03/05/2024 17:35:14"
 
 -- 
 -- Device: Altera EP3C16F484C6 Package FBGA484
@@ -36,8 +36,8 @@ ENTITY 	testSumador IS
 	A : IN std_logic_vector(3 DOWNTO 0);
 	B : IN std_logic_vector(3 DOWNTO 0);
 	Cin : IN std_logic;
-	UN : OUT std_logic_vector(6 DOWNTO 0);
-	DC : OUT std_logic_vector(6 DOWNTO 0)
+	UN : BUFFER std_logic_vector(6 DOWNTO 0);
+	DC : BUFFER std_logic_vector(6 DOWNTO 0)
 	);
 END testSumador;
 

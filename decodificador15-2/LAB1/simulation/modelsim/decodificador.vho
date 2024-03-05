@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "03/01/2024 15:52:13"
+-- DATE "03/05/2024 17:53:51"
 
 -- 
 -- Device: Altera EP3C16F484C6 Package FBGA484
@@ -37,7 +37,7 @@ ENTITY 	decodificador IS
 	bcdB : IN std_logic;
 	bcdC : IN std_logic;
 	bcdD : IN std_logic;
-	SEG : OUT std_logic_vector(6 DOWNTO 0)
+	SEG : BUFFER std_logic_vector(6 DOWNTO 0)
 	);
 END decodificador;
 
