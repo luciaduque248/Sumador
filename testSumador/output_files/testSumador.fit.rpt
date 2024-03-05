@@ -1,5 +1,5 @@
 Fitter report for testSumador
-Fri Mar 01 15:08:16 2024
+Tue Mar 05 16:11:21 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,15 +63,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Fri Mar 01 15:08:16 2024      ;
+; Fitter Status                      ; Successful - Tue Mar 05 16:11:21 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; testSumador                                ;
 ; Top-level Entity Name              ; testSumador                                ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 20 / 15,408 ( < 1 % )                      ;
-;     Total combinational functions  ; 20 / 15,408 ( < 1 % )                      ;
+; Total logic elements               ; 56 / 15,408 ( < 1 % )                      ;
+;     Total combinational functions  ; 56 / 15,408 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 15,408 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 23 / 347 ( 7 % )                           ;
@@ -183,19 +183,19 @@ applicable agreement for further details.
 +----------+--------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Incremental Compilation Preservation Summary                                                    ;
-+---------------------+-------------------+----------------------------+--------------------------+
-; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
-+---------------------+-------------------+----------------------------+--------------------------+
-; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 77 ) ; 0.00 % ( 0 / 77 )          ; 0.00 % ( 0 / 77 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 77 ) ; 0.00 % ( 0 / 77 )          ; 0.00 % ( 0 / 77 )        ;
-;                     ;                   ;                            ;                          ;
-; Routing (by net)    ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-;     -- Achieved     ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-+---------------------+-------------------+----------------------------+--------------------------+
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 113 ) ; 0.00 % ( 0 / 113 )         ; 0.00 % ( 0 / 113 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 113 ) ; 0.00 % ( 0 / 113 )         ; 0.00 % ( 0 / 113 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,7 +213,7 @@ applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 67 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 103 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -221,7 +221,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador/output_files/testSumador.pin.
+The pin-out file can be found in C:/Users/DELL/Documents/VHDL/sumadorTest(adders)/testSumador/output_files/testSumador.pin.
 
 
 +---------------------------------------------------------------------+
@@ -229,26 +229,26 @@ The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 20 / 15,408 ( < 1 % ) ;
-;     -- Combinational with no register       ; 20                    ;
+; Total logic elements                        ; 56 / 15,408 ( < 1 % ) ;
+;     -- Combinational with no register       ; 56                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 0                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 12                    ;
-;     -- 3 input functions                    ; 5                     ;
-;     -- <=2 input functions                  ; 3                     ;
+;     -- 4 input functions                    ; 19                    ;
+;     -- 3 input functions                    ; 19                    ;
+;     -- <=2 input functions                  ; 18                    ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 20                    ;
-;     -- arithmetic mode                      ; 0                     ;
+;     -- normal mode                          ; 42                    ;
+;     -- arithmetic mode                      ; 14                    ;
 ;                                             ;                       ;
 ; Total registers*                            ; 0 / 17,068 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 15,408 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 1,660 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 3 / 963 ( < 1 % )     ;
+; Total LABs:  partially or completely used   ; 4 / 963 ( < 1 % )     ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 23 / 347 ( 7 % )      ;
 ;     -- Clock pins                           ; 0 / 8 ( 0 % )         ;
@@ -266,11 +266,11 @@ The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
-; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
-; Maximum fan-out                             ; 7                     ;
-; Highest non-global fan-out                  ; 7                     ;
-; Total fan-out                               ; 109                   ;
-; Average fan-out                             ; 1.43                  ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%          ;
+; Maximum fan-out                             ; 12                    ;
+; Highest non-global fan-out                  ; 12                    ;
+; Total fan-out                               ; 202                   ;
+; Average fan-out                             ; 1.80                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -283,26 +283,26 @@ The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 20 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
-;     -- Combinational with no register       ; 20                   ; 0                              ;
+; Total logic elements                        ; 56 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
+;     -- Combinational with no register       ; 56                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 12                   ; 0                              ;
-;     -- 3 input functions                    ; 5                    ; 0                              ;
-;     -- <=2 input functions                  ; 3                    ; 0                              ;
+;     -- 4 input functions                    ; 19                   ; 0                              ;
+;     -- 3 input functions                    ; 19                   ; 0                              ;
+;     -- <=2 input functions                  ; 18                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 20                   ; 0                              ;
-;     -- arithmetic mode                      ; 0                    ; 0                              ;
+;     -- normal mode                          ; 42                   ; 0                              ;
+;     -- arithmetic mode                      ; 14                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 0                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 15408 ( 0 % )    ; 0 / 15408 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 3 / 963 ( < 1 % )    ; 0 / 963 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 4 / 963 ( < 1 % )    ; 0 / 963 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 23                   ; 0                              ;
@@ -317,7 +317,7 @@ The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 104                  ; 5                              ;
+;     -- Total Connections                    ; 197                  ; 5                              ;
 ;     -- Registered Connections               ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -350,15 +350,15 @@ The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; A[0] ; G4    ; 1        ; 0            ; 23           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; A[1] ; H6    ; 1        ; 0            ; 25           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; A[2] ; H5    ; 1        ; 0            ; 27           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; A[3] ; J6    ; 1        ; 0            ; 24           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; B[0] ; E3    ; 1        ; 0            ; 26           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; B[1] ; H7    ; 1        ; 0            ; 25           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; B[2] ; J7    ; 1        ; 0            ; 22           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; B[3] ; G5    ; 1        ; 0            ; 27           ; 21           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; Cin  ; D2    ; 1        ; 0            ; 25           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; A[0] ; G4    ; 1        ; 0            ; 23           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; A[1] ; H6    ; 1        ; 0            ; 25           ; 21           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; A[2] ; H5    ; 1        ; 0            ; 27           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; A[3] ; J6    ; 1        ; 0            ; 24           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; B[0] ; E3    ; 1        ; 0            ; 26           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; B[1] ; H7    ; 1        ; 0            ; 25           ; 14           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; B[2] ; J7    ; 1        ; 0            ; 22           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; B[3] ; G5    ; 1        ; 0            ; 27           ; 21           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; Cin  ; D2    ; 1        ; 0            ; 25           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -924,25 +924,33 @@ The pin-out file can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                 ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                       ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------+--------------+
-; |testSumador               ; 20 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 23   ; 0            ; 20 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador                                              ; work         ;
-;    |decodificador:BCDD|    ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |testSumador|decodificador:BCDD                           ; work         ;
-;    |decodificador:BCDU|    ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |testSumador|decodificador:BCDU                           ; work         ;
-;    |fulladder4Bits:A4|     ; 7 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4                            ; work         ;
-;       |fulladder:A0|       ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A0               ; work         ;
-;          |halfadder:HA1|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A0|halfadder:HA1 ; work         ;
-;       |fulladder:A1|       ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A1               ; work         ;
-;          |halfadder:HA2|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A1|halfadder:HA2 ; work         ;
-;       |fulladder:A2|       ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A2               ; work         ;
-;          |halfadder:HA2|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A2|halfadder:HA2 ; work         ;
-;       |fulladder:A3|       ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A3               ; work         ;
-;          |halfadder:HA2|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A3|halfadder:HA2 ; work         ;
-;    |tablasum:A5|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5                                  ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                               ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                      ; Library Name ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
+; |testSumador                              ; 56 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 23   ; 0            ; 56 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador                                                                                                             ; work         ;
+;    |decodificador:A6|                     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |testSumador|decodificador:A6                                                                                            ; work         ;
+;    |decodificador:A7|                     ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |testSumador|decodificador:A7                                                                                            ; work         ;
+;    |fulladder4Bits:A4|                    ; 9 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (0)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4                                                                                           ; work         ;
+;       |fulladder:A0|                      ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A0                                                                              ; work         ;
+;          |halfadder:HA2|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A0|halfadder:HA2                                                                ; work         ;
+;       |fulladder:A1|                      ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A1                                                                              ; work         ;
+;          |halfadder:HA2|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A1|halfadder:HA2                                                                ; work         ;
+;       |fulladder:A2|                      ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A2                                                                              ; work         ;
+;          |halfadder:HA2|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A2|halfadder:HA2                                                                ; work         ;
+;       |fulladder:A3|                      ; 3 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (2)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A3                                                                              ; work         ;
+;          |halfadder:HA2|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |testSumador|fulladder4Bits:A4|fulladder:A3|halfadder:HA2                                                                ; work         ;
+;    |tablasum:A5|                          ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_7gm:auto_generated|  ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_8kh:divider| ; 17 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
+;                |alt_u_div_r2f:divider|    ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider ; work         ;
+;       |lpm_divide:Mod0|                   ; 20 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Mod0                                                                                 ; work         ;
+;          |lpm_divide_b8m:auto_generated|  ; 20 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 20 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (0)       ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
+;                |alt_u_div_t2f:divider|    ; 20 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (20)      ; 0 (0)             ; 0 (0)            ; |testSumador|tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider ; work         ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -951,7 +959,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------------+---------------+-----------------------+-----+------+
 ; Name  ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +-------+----------+---------------+---------------+-----------------------+-----+------+
-; Cin   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; UN[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; UN[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; UN[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -966,90 +973,155 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DC[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; DC[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; DC[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; A[3]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B[3]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; A[2]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; B[2]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B[0]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; A[0]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; A[1]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; B[1]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; B[1]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[0]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; Cin   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; A[0]  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; A[3]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; B[3]  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +-------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                          ;
-+-----------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                       ; Pad To Core Index ; Setting ;
-+-----------------------------------------------------------+-------------------+---------+
-; Cin                                                       ;                   ;         ;
-; A[3]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A3|cout~0              ; 0                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A3|halfadder:HA2|Sum   ; 0                 ; 6       ;
-;      - tablasum:A5|Mux0~0                                 ; 0                 ; 6       ;
-;      - tablasum:A5|U[1]~6                                 ; 0                 ; 6       ;
-; B[3]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A3|cout~0              ; 1                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A3|halfadder:HA2|Sum   ; 1                 ; 6       ;
-;      - tablasum:A5|Mux0~0                                 ; 1                 ; 6       ;
-;      - tablasum:A5|U[1]~6                                 ; 1                 ; 6       ;
-; A[2]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A2|cout~0              ; 0                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A2|halfadder:HA2|Sum~0 ; 0                 ; 6       ;
-; B[2]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A2|cout~0              ; 0                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A2|halfadder:HA2|Sum~0 ; 0                 ; 6       ;
-; B[0]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A1|cout~0              ; 0                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A0|halfadder:HA1|Sum   ; 0                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum~0 ; 0                 ; 6       ;
-; A[0]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A1|cout~0              ; 1                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A0|halfadder:HA1|Sum   ; 1                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum~0 ; 1                 ; 6       ;
-; A[1]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A1|cout~0              ; 0                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum~0 ; 0                 ; 6       ;
-; B[1]                                                      ;                   ;         ;
-;      - fulladder4Bits:A4|fulladder:A1|cout~0              ; 1                 ; 6       ;
-;      - fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum~0 ; 1                 ; 6       ;
-+-----------------------------------------------------------+-------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                                                                                ; Pad To Core Index ; Setting ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
+; A[2]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A2|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A2|halfadder:HA2|Sum                                                                            ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[16]~16 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[16]~21 ; 0                 ; 6       ;
+; B[2]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A2|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A2|halfadder:HA2|Sum                                                                            ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[16]~16 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[16]~21 ; 0                 ; 6       ;
+; A[1]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A1|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum                                                                            ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[15]~17 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[15]~18 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[15]~18 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[15]~19 ; 0                 ; 6       ;
+; B[1]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A1|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum                                                                            ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[15]~17 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[15]~18 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[15]~18 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[15]~19 ; 0                 ; 6       ;
+; B[0]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A0|cout~0                                                                                       ; 1                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A0|halfadder:HA2|Sum~0                                                                          ; 1                 ; 6       ;
+; Cin                                                                                                                                ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A0|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A0|halfadder:HA2|Sum~0                                                                          ; 0                 ; 6       ;
+; A[0]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A0|cout~0                                                                                       ; 1                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A0|halfadder:HA2|Sum~0                                                                          ; 1                 ; 6       ;
+; A[3]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A3|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A3|cout~1                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A3|halfadder:HA2|Sum                                                                            ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[17]~15 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[17]~20 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[18]~19 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[18]~22 ; 0                 ; 6       ;
+; B[3]                                                                                                                               ;                   ;         ;
+;      - fulladder4Bits:A4|fulladder:A3|cout~0                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A3|cout~1                                                                                       ; 0                 ; 6       ;
+;      - fulladder4Bits:A4|fulladder:A3|halfadder:HA2|Sum                                                                            ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[17]~15 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[17]~20 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[18]~19 ; 0                 ; 6       ;
+;      - tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[18]~22 ; 0                 ; 6       ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                              ;
-+----------------------------------------------------+---------+
-; Name                                               ; Fan-Out ;
-+----------------------------------------------------+---------+
-; fulladder4Bits:A4|fulladder:A3|halfadder:HA2|Sum   ; 7       ;
-; fulladder4Bits:A4|fulladder:A2|halfadder:HA2|Sum~0 ; 6       ;
-; fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum~0 ; 5       ;
-; B[3]~input                                         ; 4       ;
-; A[3]~input                                         ; 4       ;
-; tablasum:A5|U[1]~6                                 ; 4       ;
-; tablasum:A5|U[0]~3                                 ; 4       ;
-; tablasum:A5|U[0]~2                                 ; 4       ;
-; fulladder4Bits:A4|fulladder:A3|cout~0              ; 4       ;
-; fulladder4Bits:A4|fulladder:A2|cout~0              ; 4       ;
-; A[0]~input                                         ; 3       ;
-; B[0]~input                                         ; 3       ;
-; tablasum:A5|Mux0~0                                 ; 3       ;
-; tablasum:A5|Mux1~0                                 ; 3       ;
-; fulladder4Bits:A4|fulladder:A0|halfadder:HA1|Sum   ; 3       ;
-; B[1]~input                                         ; 2       ;
-; A[1]~input                                         ; 2       ;
-; B[2]~input                                         ; 2       ;
-; A[2]~input                                         ; 2       ;
-; decodificador:BCDU|Mux1~6                          ; 2       ;
-; decodificador:BCDD|Mux1~2                          ; 2       ;
-; fulladder4Bits:A4|fulladder:A1|cout~0              ; 2       ;
-; decodificador:BCDD|Mux1~4                          ; 1       ;
-; decodificador:BCDU|Mux1~8                          ; 1       ;
-; decodificador:BCDU|Mux1~7                          ; 1       ;
-; decodificador:BCDD|Mux1~3                          ; 1       ;
-; tablasum:A5|U[1]~5                                 ; 1       ;
-; tablasum:A5|U[0]~4                                 ; 1       ;
-+----------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                                                                 ;
++---------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Name                                                                                                                                  ; Fan-Out ;
++---------------------------------------------------------------------------------------------------------------------------------------+---------+
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[4]~6 ; 12      ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[4]~6 ; 8       ;
+; B[3]~input                                                                                                                            ; 7       ;
+; A[3]~input                                                                                                                            ; 7       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[23]~17           ; 7       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[22]~16           ; 7       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[21]~15           ; 7       ;
+; fulladder4Bits:A4|fulladder:A0|halfadder:HA2|Sum~0                                                                                    ; 7       ;
+; B[1]~input                                                                                                                            ; 6       ;
+; A[1]~input                                                                                                                            ; 6       ;
+; fulladder4Bits:A4|fulladder:A2|cout~0                                                                                                 ; 6       ;
+; fulladder4Bits:A4|fulladder:A0|cout~0                                                                                                 ; 6       ;
+; B[2]~input                                                                                                                            ; 4       ;
+; A[2]~input                                                                                                                            ; 4       ;
+; fulladder4Bits:A4|fulladder:A1|cout~0                                                                                                 ; 4       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_4_result_int[5]~8 ; 4       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[5]~8 ; 3       ;
+; A[0]~input                                                                                                                            ; 2       ;
+; Cin~input                                                                                                                             ; 2       ;
+; B[0]~input                                                                                                                            ; 2       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[16]~21           ; 2       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[17]~20           ; 2       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[16]~14           ; 2       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[17]~13           ; 2       ;
+; decodificador:A6|Mux3~0                                                                                                               ; 2       ;
+; fulladder4Bits:A4|fulladder:A2|halfadder:HA2|Sum                                                                                      ; 2       ;
+; fulladder4Bits:A4|fulladder:A3|halfadder:HA2|Sum                                                                                      ; 2       ;
+; fulladder4Bits:A4|fulladder:A3|cout~1                                                                                                 ; 2       ;
+; fulladder4Bits:A4|fulladder:A3|cout~0                                                                                                 ; 2       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[18]~22           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[18]~19           ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[15]~19           ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[15]~18           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[15]~18           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[15]~17           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[16]~16           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[17]~15           ; 1       ;
+; decodificador:A7|Mux0~0                                                                                                               ; 1       ;
+; decodificador:A7|Mux1~0                                                                                                               ; 1       ;
+; decodificador:A7|Mux2~0                                                                                                               ; 1       ;
+; decodificador:A7|Mux3~0                                                                                                               ; 1       ;
+; decodificador:A7|Mux4~0                                                                                                               ; 1       ;
+; decodificador:A7|Mux5~0                                                                                                               ; 1       ;
+; decodificador:A7|Mux6~0                                                                                                               ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|StageOut[18]~12           ; 1       ;
+; decodificador:A6|Mux2~0                                                                                                               ; 1       ;
+; decodificador:A6|Mux5~0                                                                                                               ; 1       ;
+; fulladder4Bits:A4|fulladder:A1|halfadder:HA2|Sum                                                                                      ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[16]~14           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[17]~13           ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|StageOut[18]~12           ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[4]~7 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[3]~5 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[3]~4 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[2]~3 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[2]~2 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[1]~1 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_4_result_int[1]~0 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[3]~5 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[3]~4 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[2]~3 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[2]~2 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[1]~1 ; 1       ;
+; tablasum:A5|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider|add_sub_3_result_int[1]~0 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_4_result_int[4]~7 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_4_result_int[3]~5 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_4_result_int[2]~3 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_4_result_int[1]~1 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[3]~5 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[3]~4 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[2]~3 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[2]~2 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[1]~1 ; 1       ;
+; tablasum:A5|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[1]~0 ; 1       ;
++---------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------+
@@ -1057,95 +1129,103 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 27 / 47,787 ( < 1 % ) ;
-; C16 interconnects     ; 1 / 1,804 ( < 1 % )   ;
-; C4 interconnects      ; 28 / 31,272 ( < 1 % ) ;
-; Direct links          ; 0 / 47,787 ( 0 % )    ;
+; Block interconnects   ; 51 / 47,787 ( < 1 % ) ;
+; C16 interconnects     ; 0 / 1,804 ( 0 % )     ;
+; C4 interconnects      ; 42 / 31,272 ( < 1 % ) ;
+; Direct links          ; 1 / 47,787 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )        ;
-; Local interconnects   ; 8 / 15,408 ( < 1 % )  ;
-; R24 interconnects     ; 9 / 1,775 ( < 1 % )   ;
-; R4 interconnects      ; 30 / 41,310 ( < 1 % ) ;
+; Local interconnects   ; 22 / 15,408 ( < 1 % ) ;
+; R24 interconnects     ; 18 / 1,775 ( 1 % )    ;
+; R4 interconnects      ; 32 / 41,310 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
-+--------------------------------------------------------------------------+
-; LAB Logic Elements                                                       ;
-+--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 6.67) ; Number of LABs  (Total = 3) ;
-+--------------------------------------------+-----------------------------+
-; 1                                          ; 0                           ;
-; 2                                          ; 1                           ;
-; 3                                          ; 1                           ;
-; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
-; 6                                          ; 0                           ;
-; 7                                          ; 0                           ;
-; 8                                          ; 0                           ;
-; 9                                          ; 0                           ;
-; 10                                         ; 0                           ;
-; 11                                         ; 0                           ;
-; 12                                         ; 0                           ;
-; 13                                         ; 0                           ;
-; 14                                         ; 0                           ;
-; 15                                         ; 1                           ;
-; 16                                         ; 0                           ;
-+--------------------------------------------+-----------------------------+
-
-
 +---------------------------------------------------------------------------+
-; LAB Signals Sourced                                                       ;
+; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 6.67) ; Number of LABs  (Total = 3) ;
+; Number of Logic Elements  (Average = 14.00) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
-; 3                                           ; 1                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
+; 9                                           ; 1                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 1                           ;
+; 16                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Signals Sourced  (Average = 12.75) ; Number of LABs  (Total = 4) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 1                           ;
+; 10                                           ; 0                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 1                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 2                           ;
++----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 4.33) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced Out  (Average = 7.75) ; Number of LABs  (Total = 4) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
-; 2                                               ; 1                           ;
-; 3                                               ; 1                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
+; 6                                               ; 2                           ;
 ; 7                                               ; 0                           ;
 ; 8                                               ; 1                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 4.33) ; Number of LABs  (Total = 3) ;
+; Number of Distinct Inputs  (Average = 9.25) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
+; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 1                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1210,7 +1290,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; Total Inapplicable ; 0         ; 23           ; 0         ; 23           ; 23           ; 0         ; 0         ; 23           ; 0         ; 0         ; 23           ; 9            ; 23           ; 23           ; 14           ; 23           ; 9            ; 14           ; 23           ; 23           ; 23           ; 9            ; 23           ; 23           ; 23           ; 23           ; 23           ; 0         ; 23           ; 23           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Cin                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; UN[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; UN[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; UN[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1225,14 +1304,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DC[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; DC[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; DC[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; B[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Cin                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; A[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; B[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1304,7 +1384,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1312,7 +1392,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X10_Y20 to location X20_Y29
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X21_Y20 to location X30_Y29
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
@@ -1323,10 +1403,10 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/DELL/Documents/VHDL/adders/testSumador/output_files/testSumador.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/DELL/Documents/VHDL/sumadorTest(adders)/testSumador/output_files/testSumador.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5349 megabytes
-    Info: Processing ended: Fri Mar 01 15:08:17 2024
+    Info: Peak virtual memory: 5327 megabytes
+    Info: Processing ended: Tue Mar 05 16:11:21 2024
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -1334,6 +1414,6 @@ Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/DELL/Documents/VHDL/adders/testSumador/output_files/testSumador.fit.smsg.
+The suppressed messages can be found in C:/Users/DELL/Documents/VHDL/sumadorTest(adders)/testSumador/output_files/testSumador.fit.smsg.
 
 
