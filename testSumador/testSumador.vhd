@@ -47,7 +47,7 @@ architecture arch_testSumador of testSumador is
 begin
 
     A4 : fulladder4Bits port map (A, B, Cin, Sum_4Bits);
-    A5 : tablasum port map (To_integer(unsigned(Sum_4Bits)), BCD_U, BCD_D); 
+    A5 : tablasum port map (To_integer(unsigned(Sum_4Bits)), BCD_D, BCD_U); 
     uni <= std_logic_vector(To_unsigned(BCD_U, 4));
     dec <= std_logic_vector(To_unsigned(BCD_D, 4));
     A6 : decodificador port map (uni(3),uni(2),uni(1),uni(0), UN);
