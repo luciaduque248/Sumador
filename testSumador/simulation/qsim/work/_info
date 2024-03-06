@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\DELL\Documents\VHDL\sumadorTest(adders)\testSumador\simulation\qsim
+vtestSumador
+Z1 INEGMAm@0;9_QOD>B3Koz_3
+Z2 VE;WVh?K^_3n2iAX05CO:X2
+Z3 dC:\Users\DELL\Documents\VHDL\sumadorTest(adders)\testSumador\simulation\qsim
+Z4 w1709683521
+Z5 8testSumador.vo
+Z6 FtestSumador.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 ntest@sumador
+!i10b 1
+Z10 !s100 <[O_O_9?z>?5^miHXh=o90
+!s85 0
+Z11 !s108 1709683521.606000
+Z12 !s107 testSumador.vo|
+Z13 !s90 -work|work|testSumador.vo|
+!s101 -O0
+vtestSumador_vlg_check_tst
+!i10b 1
+!s100 AKnWJmfA2NAE^HQ^Dd]lo0
+IP6<<231O^TG6nc[5Y<DYj0
+VL=zIakZ;1akZ[eZ=IW9791
+R3
+Z14 w1709683520
+Z15 8DiagramTime.vwf.vt
+Z16 FDiagramTime.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1709683521.685000
+Z18 !s107 DiagramTime.vwf.vt|
+Z19 !s90 -work|work|DiagramTime.vwf.vt|
+!s101 -O0
+R8
+ntest@sumador_vlg_check_tst
+vtestSumador_vlg_sample_tst
+!i10b 1
+!s100 j9I76AcEb[T[i4]d7@z[E2
+IOEk[0N_IM@nKQbPge3;1?0
+Vm2Y6d6n]AgN`OaF^Lk8<<0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+ntest@sumador_vlg_sample_tst
+vtestSumador_vlg_vec_tst
+!i10b 1
+!s100 EPj:H4THMPXXUQhO`]]UV0
+Ie26]JHmcAK:NL=0QfY]ON1
+VeiJMk@7<hgJ^<aG0ZV0gO0
+R3
+R14
+R15
+R16
+L0 397
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+ntest@sumador_vlg_vec_tst

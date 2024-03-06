@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "03/05/2024 17:54:42"
+-- DATE "03/05/2024 19:01:27"
 
 -- 
 -- Device: Altera EP3C5E144C7 Package TQFP144
@@ -28,14 +28,17 @@
 
 LIBRARY CYCLONEIII;
 LIBRARY IEEE;
+LIBRARY STD;
 USE CYCLONEIII.CYCLONEIII_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE STD.STANDARD.ALL;
 
 ENTITY 	tablasum IS
     PORT (
-	sum : IN std_logic_vector(4 DOWNTO 0);
-	D : BUFFER std_logic_vector(3 DOWNTO 0);
-	U : BUFFER std_logic_vector(3 DOWNTO 0)
+	sum : IN STD.STANDARD.integer range 0 TO 31;
+	D : OUT STD.STANDARD.integer range 0 TO 9;
+	U : OUT STD.STANDARD.integer range 0 TO 9
 	);
 END tablasum;
 
@@ -132,9 +135,9 @@ SIGNAL \Div0|auto_generated|divider|divider|ALT_INV_add_sub_3_result_int[4]~6_co
 
 BEGIN
 
-ww_sum <= sum;
-D <= ww_D;
-U <= ww_U;
+ww_sum <= IEEE.STD_LOGIC_ARITH.CONV_STD_LOGIC_VECTOR(sum, 5);
+D <= IEEE.STD_LOGIC_ARITH.CONV_INTEGER(UNSIGNED(ww_D));
+U <= IEEE.STD_LOGIC_ARITH.CONV_INTEGER(UNSIGNED(ww_U));
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
